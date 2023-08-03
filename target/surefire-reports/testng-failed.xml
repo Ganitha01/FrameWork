@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="vtiger.Organization.Tests.CreateOrganizationTest">
+        <methods>
+          <include name="bmConfiguration"/>
+          <include name="amConfiguration"/>
+          <include name="acConfiguration"/>
+          <include name="bsConfiguration"/>
+          <include name="createOrgTest"/>
+          <include name="asConfiguration"/>
+          <include name="bcConfiguration"/>
+        </methods>
+      </class> <!-- vtiger.Organization.Tests.CreateOrganizationTest -->
+      <class name="vtiger.Practice.CreateMultipleOrgTest">
+        <methods>
+          <include name="createOrgTest" invocation-numbers="2 3"/>
+        </methods>
+      </class> <!-- vtiger.Practice.CreateMultipleOrgTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
